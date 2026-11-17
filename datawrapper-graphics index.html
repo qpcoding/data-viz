@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryland Heat Data Visualizations</title>
+</head>
+<body>
+    <main>
+        <h1>Maryland Heat Data Visualizations</h1>
+
+        <section aria-labelledby="deaths-heading">
+            <h2 id="deaths-heading">Hot-related deaths in Maryland and Baltimore</h2>
+            <iframe title="Hot-related deaths in Maryland and Baltimore" aria-label="Grouped column chart" id="datawrapper-chart-6hHMv" src=https://datawrapper.dwcdn.net/O8Wwj/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="395" data-external="1"></iframe>
+        </section>
+
+        <section aria-labelledby="heat-index-heading">
+            <h2 id="heat-index-heading">Indoor and outdoor heat index during Baltimore heat wave</h2>
+            <iframe title="Indoor and outdoor heat index during Baltimore heat wave" aria-label="Line chart" id="datawrapper-chart-SbTUt" src="https://datawrapper.dwcdn.net/SbTUt/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="315" data-external="1"></iframe>
+        </section>
+    </main>
+    <script type="text/javascript">
+        (function () {
+            function resizeDatawrapperFrames() {
+                window.addEventListener("message", function (event) {
+                    if (event.data["datawrapper-height"] !== undefined) {
+                        var frames = document.querySelectorAll("iframe");
+                        for (var chartId in event.data["datawrapper-height"]) {
+                            for (var i = 0; i < frames.length; i++) {
+                                if (frames[i].contentWindow === event.source) {
+                                    frames[i].style.height = event.data["datawrapper-height"][chartId] + "px";
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+            resizeDatawrapperFrames();
+        })();
+    </script>
+</body>
+</html>
